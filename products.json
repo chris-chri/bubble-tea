@@ -1,0 +1,42 @@
+[
+{
+
+    "id":1,
+    "name":"Vanilla Bubble Tea",
+    "price": 6.79,
+    "image": "boba1.png" 
+}, 
+{
+        
+    "id":2,
+    "name":"Vanilla Bubble Tea",
+    "price": 6.79,
+    "image": "boba2.png" 
+},
+{
+        
+    "id":3,
+    "name":"Vanilla Bubble Tea",
+    "price": 6.79,
+    "image": "boba3.png" 
+},        
+{
+            
+    "id":4,
+    "name":"Vanilla Bubble Tea",
+    "price": 6.79,
+    "image": "boba4.png" 
+},
+{
+    
+    
+    "id":5,
+    "name":"Vanilla Bubble Tea",
+    "price": 6.79,
+    "image": "boba5 .png" 
+    
+
+
+}
+]       
+

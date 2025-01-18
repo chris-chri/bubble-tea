@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap');
+
+
+body{
+    font-family: "Oswald";
+    overflow: hidden;
+    margin: 0;
+    background-color: beige;
+}
+
+
+
+.container{
+width: 100%;
+max-width: 90vw;
+margin:auto;
+text-align: center;
+padding-top: 10px;
+transition: transform.5s;
+}
+
+ 
+.title{
+    color: brown;
+    font-size: 40px;
+  }
+svg{
+    margin-right: 10px;
+    width:50px;
+    height: 29px;
+}
+
+header{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 29px 0;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: #BD9A7A;
+    border-style: outset;
+    border-color:#9F8C76;
+    border-width: 10px;
+}
+
+header.icon-cart{
+    position: relative;
+
+}
+header .icon-cart span{
+    display:flex;
+    width: 29px;
+    height:24px;
+    background-color: red;
+    justify-content: center;
+    align-items:center;
+    color: white;
+    border-radius: 50%;
+    position: absolute;
+    top:5%;
+    
+}
+
+
+.listProduct .bobaDrink img{
+    width:54%;
+    filter: drop-shadow(0 10px 10px black);
+}
+
+.listProduct{
+    display: grid ;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+
+}
+
+
+.listProduct .bobaDrink{
+    background-color: burlywood;
+    padding: 20px;
+    border-style: outset;
+    border-color: brown;
+    border-width: 10px;
+    border-radius: 20px;
+}
+
+.listProduct.bobaDrink h2{
+   font-weight: 500px;
+   font-size: large;
+}
+
+.listProduct.bobaDrink.price{
+    letter-spacing: 7px;
+    font-size: small;
+}
+
+
+.listProduct .bobaDrink button{
+    background-color: #353432;
+    color:#eee;
+    padding: 5px 10px;
+    border-radius: 20px;
+    border: none;
+    cursor:pointer;
+}
+
+.cartTab{
+    width:400px;
+    background-color: rgb(177, 177, 102);
+    color:#eee;
+    position: fixed;
+    top:0;
+    right: 0;
+    bottom:0;
+    inset: 0 -400px 0 auto;
+    display: grid;
+    grid-template-rows: 70px 1fr 70px;
+    transition: .5s;
+}
+
+body.showCart .cartTab{
+    inset: 0 0 0 auto;
+
+}
+
+body.showCart .container{
+    transform: translateX(-400px );
+    transition: transform .5s;
+}
+
+
+.cartTab h1{
+    padding: 20px;
+    margin: 0;
+    font-weight: 300;
+}
+
+.cartTab .bn {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+
+
+.cartTab .bn button{
+    background-color:rgb(253, 188, 108) ;
+    border: none ;
+    font-family:"Oswald";
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.cartTab .bn .close{
+    background-color:rgb(253, 188, 108);
+}
+
+.cartTab .listCart .bobaDrink img{
+    width:50%;
+}
+
+.cartTab  .listCart .bobaDrink{
+    display: grid;
+    grid-template-columns: 70px 150px 50px 1fr;
+    gap: 10px;
+    text-align: center;
+    align-items: center;
+}
+
+
+.listCart .quantity span{
+    display: inline-block;
+    width:25px;
+    height: 25px;
+    background-color:beige ;
+    color: #555;
+    border-radius: 50%;
+    cursor: pointer;
+
+}
+
+
+.listCart .quantity span:nth-child(2){
+    background: transparent;
+    color:beige;
+}
+
+.listCart .item:nth-child(even){
+    background-color: rgb(172, 150, 123);
+    
+}
+.listCart{
+    overflow: auto;
+
+}
+.listCart::-webkit-scrollbar{
+    width: 0;
+}
+
+
+@media screen and (max-width: 992px) {
+    .listProduct{
+        grid-template-columns: repeat(3,1fr);
+    }
+    header{
+        display:flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 29px 0;
+        width: 120%;
+        border-radius: 10px;
+        margin-bottom: 30px;
+        margin-left: 10px;
+        margin-right: 10px;
+        background-color: #BD9A7A;
+        border-style: outset;
+        border-color:#9F8C76;
+        border-width: 10px;
+
+    }
+
+    .header .icon-cart span{
+        display: flex;
+        width: 29px;
+        height: 24px;
+        background-color: red;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        position: absolute;
+        top:5%;
+    }
+
+}
+

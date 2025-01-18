@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap');
+
+
+body{
+    font-family: "Oswald";
+    background-color: beige;
+    overflow: hidden ;
+    max-width: 0;
+
+}
+.container button{
+    border-color: brown;
+    background-color: burlywood;
+}
+
+.checkout-container{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+.checkout-container .total-amount{
+    position: absolute;
+    border-radius: 10px;
+    border-style: outset;
+    background-color: burlywood;
+    border-width: 10px;
+    border-color: brown;
+    display: flex;
+    justify-content: center;
+    top:1000%;
+    left: 690%;
+    
+}
+
+.checkout-container h1{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    left: 600%;
+    margin: 0;
+    text-align: center;
+    background-color: burlywood;
+    border-radius: 10px;
+    border-style: outset;
+    border-color: brown;
+    border-width: 10px;
+    
+}
+
+@media screen and (max-width: 400px) {
+
+    .checkout-container h1{
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        left: 150%;
+        margin: 0;
+        text-align: center;
+
+}
+}
+@media screen and (max-width: 768px) {
+    .listProduct{
+        grid-template-columns: repeat(3,1fr);
+    }
+    .checkout-container h1{
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        left: 134%;
+        margin: 0;
+        text-align: center;
+    }
+     .checkout-container .total-amount{
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        top:1000%;
+        left: 134%;  
+
+    }
+}
+
+@media screen and (min-width:800px) {
+    .checkout-container h1{
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        left:280%;
+        margin:0;
+        text-align: center;
+        width: 200%;
+    }
+    .checkout-container .total-amount{
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        left:299%;
+        margin:0;
+        text-align: center;
+        width: 200%;
+    }
+}
+
+@media screen and (min-width:1000px) {
+    .checkout-container h1{
+        position: absolute;
+        display: flex;
+        left: 650%;
+        margin: 0;
+        text-align: center;
+        width: 300%;
+    }
+
+    .checkout-container .total-amount{
+        position: absolute;
+        display: flex;
+        left: 650%;
+        margin: 0;
+        text-align: center;
+        padding: 10px;
+        width: 300%;
+        height: 260%;
+    }
+
+
+
+    
+} 
+    
+
+
+    
