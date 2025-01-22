@@ -1,3 +1,6 @@
+# First Update
+I have added chocolate and desert pages. I still need time on the shopping list
+
 # What is the website
 
 The webiste displays different flavors of bubbble tea and you can add them in you shop cart. which will not change even if you reset the website. when you Check out you can see how much it cost.
