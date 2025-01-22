@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap');
+
+body{
+    font-family: "Oswald";
+    overflow-x: hidden;
+    margin: 0;
+    background-color: beige;
+}
+
+
+.title{
+    color:brown;
+    font-size:40px;
+}
+
+.container{
+    width: 100%;
+    max-width: 90ew;
+    margin: auto;
+    text-align: center;
+    padding-top: 10px;
+    transition: transform.5s;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 29px 0;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color:#BD9A7A ;
+    border-style: outset;
+    border-color:#9F8C7A ;
+    border-width: 10px;
+}
+
+li, a, button{
+    font-family: "Oswald";
+    font-weight: 500;
+    font-size: 16px;
+    color: white;
+    position: absolute;
+    text-decoration: none;
+}
+
+.navLinks .bLink{
+    position: absolute;
+    right: -950px;
+    bottom: 10px;
+    font-size: 40px;
+    background-image: url("bubb.png");
+    padding-left: 14px;
+    width: 180px;
+    border-radius: 10px;
+    align-content: center;
+}
+.navLinks .bLink:hover{
+    color: #BD9A7A;
+}
+
+
+.navLinks .dLink{
+    position: absolute;
+    right: -1200px;
+    bottom: 10px;
+    font-size: 40px;
+    background-image: url("dessert.png");
+    width: 180px;
+    padding-left: 10px;
+    border-radius: 10px;
+    align-content: center;
+}
+
+.navLinks .dLink:hover{
+    color: #9F8C7A;
+}
+
+header.icon-cart{
+    position: relative;
+}
+
+header .icon-cart span{
+    display: flex;
+    width: 29px;
+    height: 24px;
+    background-color: red;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 10%;
+}
+
+.listProduct .cake img{
+    width: 44%;
+    height: auto;
+    filter: drop-shadow(0 10px 10px black);
+}
+
+
+
+.listProduct{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px
+
+}
+
+.listProduct .chocolate {
+    background-color: burlywood;
+    padding: 10px;
+    padding-bottom: 10px;
+    border-style: outset;
+    border-color: brown;
+    border-width: 10px;
+    border-radius: 40px;
+    
+}
+
+.listProduct.chocolate h2{
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.listProduct.chocolate.price{
+    letter-spacing: 7px;
+    font-size: 14px;
+}
+
+.listProduct.chocolate button{
+    background-color: #353432;
+    color: white;
+    padding:5px 10px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+}
+.addCart{
+    background-color: #353432;
+    border-radius: 10px;
+    cursor: pointer;
+    position: relative;
+    right: 50px;
+    top: 10px;
+}
+
+.cartTab{
+    width: 400px;
+    background-color:rgb(177, 177, 102);
+    color: white;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    inset: 0 -400px 0 auto;
+    display: grid;
+    grid-template-rows:70px 1fr 70px;
+    transition: .5s;
+}
+
+
+body.showCart .cartTab{
+    inset:  0 0 0 auto;
+}
+
+body.showCart .container{
+    transform: translateX(-400px);
+    transition: transform .5s;
+}
+
+.cartTab h1{
+    padding:20px;
+    margin: 0;
+    font-weight: 300;
+}
+
+
+.cartTab .bn{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+
+.cartTab .bn button{
+    background-color: rgb(253, 188, 108);
+    border: none;
+    font-family: "Oswald";
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.cartTab .bn .close{
+    width: 500px;
+    padding-bottom: 50px;
+    background-color:rgb(253, 188, 108) ;
+}
+
+
+.cartTab .listCart .chocolate img{
+    width: 50%;
+}
+
+
+.cartTab .listCart .chocolate{
+    display: grid;
+    grid-template-columns: 70px 150px 50px 1fr;
+    gap:10px;
+    text-align: center;
+    align-items: center;
+}
+
+
+
+.listCart .quantity span{
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-color: beige;
+    color: #555;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.listCart .quantity span:nth-child(2){
+    background: transparent;
+    color: beige;
+}
+
+.listCart{
+    overflow: auto;
+}
+
+.listCart::-webkit-scrollbar{
+    width: 0;
+}
+
+.listCart .item:nth-child(even){
+    background-color:rgb(172, 150, 123) ;
+}
+@media  (max-width:986px) {
+    header{
+        width:950px;
+    }
+
+}

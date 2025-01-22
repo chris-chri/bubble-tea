@@ -1,0 +1,85 @@
+body{
+    font-family: "Oswald";
+    overflow-x: hidden;
+    margin: 0;
+    background-color: beige;
+}
+
+
+.container{
+    width: 100%;
+    max-width: 90vw;
+    margin: auto;
+    text-align: center;
+    padding: 10px;
+    transition: transform .5s;
+}
+
+.title{
+    color: brown;
+    font-size: 40px;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 29px 0;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: #BD9A7A;
+    border-style: outset;
+    border-color: #9F8C76;
+    border-width: 10px;
+}
+
+li, a, button{
+    font-family: "Oswald";
+    font-weight: 500;
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+}
+
+
+
+.navLinks .bLink{
+    position: absolute;
+    right: -950px;
+    bottom: 10px;
+    font-size: 40px;
+    background-image: url("bubb.png");
+    padding-left: 14px;
+    width: 180px;
+    border-radius: 10px;
+    align-content: center;
+}
+
+.navLinks.bLink:hover{
+    color: #BD9A7A;
+}
+
+.navLinks .dLink{
+    position: absolute;
+    right: -950px;
+    bottom: 10px;
+    font-size: 40px;
+    background-image: url("bubb.png");
+    padding-left: 14px;
+    width: 180px;
+    border-radius: 10px;
+    align-content: center;
+}
+
+.navLinks.dLink:hover{
+    color: #BD9A7A;
+}
+
+
+
+nav{
+    position: absolute;
+    
+}

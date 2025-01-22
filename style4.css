@@ -1,6 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap');
-
-
 body{
     font-family: "Oswald";
    overflow-x: hidden;
@@ -22,7 +19,7 @@ transition: transform.5s;
  
 .title{
     color: brown;
-    font-size: 40px;
+    font-size: 20px;
   }
 svg{
     margin-right: 10px;
@@ -71,15 +68,16 @@ li, a, button{
     text-decoration: none;
 
 }
-.navLinks .dLink{
-position: absolute;
-right: -396px;
-font-size: 40px;
-background-image: url("dessert.png");
-width:180px;
-padding-left: 15px;
-border-radius: 10px;
-align-content: center;
+.navLinks .bLink{
+    position: absolute;
+    right: -950px;
+    bottom: 10px;
+    font-size: 40px;
+    background-image: url("bubb.png");
+    padding-left: 14px;
+    width: 180px;
+    border-radius: 10px;
+    align-content: center;
 }
 .navLinks .cLink{
     position: absolute;
@@ -93,10 +91,10 @@ align-content: center;
     
 }
 
-.navLinks .cLink:hover{
+.navLinks .bLink:hover{
     color: #9F8C76;
 }
-.navLinks .dLink:hover{
+.navLinks .cLink:hover{
     color:#9F8C76 ;
 }
 nav{
@@ -119,8 +117,8 @@ nav{
 
 }
 
-.listProduct .bobaDrink img{
-    width:54%;
+.listProduct .cake img{
+    width:44%;
     filter: drop-shadow(0 10px 10px black);
 }
 
@@ -132,27 +130,27 @@ nav{
 }
 
 
-.listProduct .bobaDrink{
+.listProduct .cake{
     background-color: burlywood;
-    padding: 40px;
+    padding: 50px;
     border-style: outset;
     border-color: brown;
     border-width: 10px;
     border-radius: 20px;
 }
 
-.listProduct.bobaDrink h2{
-   font-weight: 500px;
-   font-size: large;
+.listProduct.cake h2{
+   font-weight: 500;
+   font-size: 16px;
 }
 
-.listProduct.bobaDrink.price{
+.listProduct.cake.price{
     letter-spacing: 7px;
-    font-size: small;
+    font-size: 14px;
 }
 
 
-.listProduct .bobaDrink button{
+.listProduct .cake button{
     background-color: #353432;
     color:#eee;
     padding: 5px 10px;
@@ -215,11 +213,11 @@ body.showCart .container{
 
 }
 
-.cartTab .listCart .bobaDrink img{
+.cartTab .listCart .cakes img{
     width:50%;
 }
 
-.cartTab  .listCart .bobaDrink{
+.cartTab  .listCart .cakes{
     display: grid;
     grid-template-columns: 70px 150px 50px 1fr;
     gap: 10px;
